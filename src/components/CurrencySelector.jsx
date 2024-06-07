@@ -3,11 +3,11 @@ import React from "react";
 const CurrencySelector = ({ label, currency, handleChange, rates }) => {
   return (
     <div>
-      <label>
+      <label className="">
         {label}:
-        <select value={currency} onChange={handleChange}>
+        <select className="text-black" value={currency} onChange={handleChange}>
           {Object.keys(rates).map((currency) => (
-            <option key={currency} value={currency}>
+            <option  key={currency} value={currency}>
               {currency}
             </option>
           ))}

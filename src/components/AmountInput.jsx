@@ -5,7 +5,7 @@ const AmountInput = ({ amount, handleAmountChange }) => {
     <div>
       <label>
         Amount:
-        <input
+        <input className="text-black py-1 pl-1 rounded focus:ring-2 focus:outline-none"
           type="number"
           value={amount}
           onChange={handleAmountChange}

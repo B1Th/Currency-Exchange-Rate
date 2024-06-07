@@ -50,8 +50,8 @@ const ExchangeRate = () => {
   };
 
   return (
-    <div className="exchange-rate-container">
-      <h1>Currency Exchange Rate</h1>
+    <div className="rounded shadow-lg shadow-white border-white flex gap-7 flex-col p-9 text-white">
+      <h1 className="font-bold text-4xl text-amber-200">Currency Exchange Rate</h1>
       <CurrencySelector
         label="Base Currency"
         currency={baseCurrency}

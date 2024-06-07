@@ -15,7 +15,7 @@ const ExchangeRateDisplay = ({
       ) : error ? (
         <p className="error">{error}</p>
       ) : (
-        <p>
+        <p className="text-green-200">
           {amount} {baseCurrency} ={" "}
           {convertedAmount ? convertedAmount.toFixed(2) : "..."}{" "}
           {targetCurrency}
