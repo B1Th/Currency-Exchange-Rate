@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ExchangeRateDisplay = ({
   loading,
@@ -6,21 +6,16 @@ const ExchangeRateDisplay = ({
   amount,
   baseCurrency,
   convertedAmount,
-  targetCurrency,
+  targetCurrency
 }) => {
+  if (loading) return <p className="text-gray-700">Loading...</p>;
+  if (error) return <p className="text-red-500">{error}</p>;
+
   return (
-    <div>
-      {loading ? (
-        <p className="loading">Loading...</p>
-      ) : error ? (
-        <p className="error">{error}</p>
-      ) : (
-        <p className="text-emerald-600 font-bold">
-          {amount} {baseCurrency} ={" "}
-          {convertedAmount ? convertedAmount.toFixed(2) : "..."}{" "}
-          {targetCurrency}
-        </p>
-      )}
+    <div className="mt-4">
+      <p className="text-lg font-semibold">
+        {amount} {baseCurrency} is approximately {convertedAmount?.toFixed(2)} {targetCurrency}
+      </p>
     </div>
   );
 };
