@@ -8,13 +8,13 @@ const ExchangeRateDisplay = ({
   convertedAmount,
   targetCurrency
 }) => {
-  if (loading) return <p className="text-gray-700">Loading...</p>;
-  if (error) return <p className="text-red-500">{error}</p>;
+  if (loading) return <p className="text-gray-300 text-center">Loading...</p>;
+  if (error) return <p className="text-red-500 text-center">{error}</p>;
 
   return (
-    <div className="mt-4">
-      <p className="text-lg font-semibold">
-        {amount} {baseCurrency} is approximately {convertedAmount?.toFixed(2)} {targetCurrency}
+    <div className="mt-4 w-full text-center">
+      <p className="text-lg font-semibold text-gray-300">
+        {amount} {baseCurrency} = <span className="text-green-600">{convertedAmount?.toFixed(2)}</span> {targetCurrency}
       </p>
     </div>
   );
