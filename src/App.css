@@ -16,7 +16,17 @@ body {
     }
   }
   
-  
+  .swap:hover{
+    animation: wheel .6s ease-in;
+  }
+  @keyframes wheel{
+    from{
+      transform: rotate(90deg);
+    }
+    to{
+      transform: rotate(270deg);
+    }
+  }
 
   .neumorphism-input {
     background: #e0e0e0;

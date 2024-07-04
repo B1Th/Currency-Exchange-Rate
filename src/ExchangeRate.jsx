@@ -98,7 +98,7 @@ const ExchangeRate = () => {
         />
         <div className="w-full flex justify-center">
         <button onClick={swapCurrencies} className="p-2 border-2 border-gray-400 rounded-full">
-          <img src="/exchange.png" alt="" className="h-6 w-6 rotate-90 opacity-80" />
+          <img src="/exchange.png" alt="" className="swap h-6 w-6 rotate-90 opacity-80"  />
         </button>
         </div>
         <CurrencySelector
