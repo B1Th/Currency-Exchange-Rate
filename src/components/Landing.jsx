@@ -24,7 +24,7 @@ const Landing = () => {
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Get real-time exchange rates for over 170 currencies. Fast, accurate, and user-friendly.
           </p>
-          <a href="#converter" className="bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-300 transition-colors transform hover:scale-105 inline-block">
+          <a href="#exRate" className="bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-300 transition-colors transform hover:scale-105 inline-block">
             Start Converting
           </a>
         </div>
@@ -44,11 +44,7 @@ const Landing = () => {
           />
         </div>
 
-        <div id="about" className="mt-24 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">HOW TO USE?</h2>
-          <p className="text-gray-200 max-w-2xl mx-auto">
-          Start by selecting your base currency from the "From" dropdown, then choose the currency you want to convert to in the "To" menu. Enter the amount you wish to convert, and you'll instantly see the converted amount below, along with the current exchange rate. For quick currency swaps, simply use the swap button.          </p>
-        </div>
+        
 
         {/* <div id="contact" className="mt-24 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Get In Touch</h2>

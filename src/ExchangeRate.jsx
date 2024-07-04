@@ -81,7 +81,12 @@ const ExchangeRate = () => {
   };
 
   return (
-    <div className="h-screen w-screen flex justify-center items-center gap-24 flex-col p-9 bg-soft-gray text-gray-800">
+    <div className="h-screen w-screen flex justify-center items-center gap-10 flex-col p-9 bg-soft-gray text-gray-800">
+    <div id="about" className="mt-24 text-center">
+          <h2 className="text-3xl font-bold text-white mb-6">HOW TO USE?</h2>
+          <p className="text-gray-200 max-w-2xl mx-auto">
+          Start by selecting your base currency from the "From" dropdown, then choose the currency you want to convert to in the "To" menu. Enter the amount you wish to convert, and you'll instantly see the converted amount below, along with the current exchange rate. For quick currency swaps, simply use the swap button.          </p>
+        </div>
      
       <div className="p-6 w-full max-w-md">
         <CurrencySelector
@@ -93,7 +98,7 @@ const ExchangeRate = () => {
         />
         <div className="w-full flex justify-center">
         <button onClick={swapCurrencies} className="p-2 border-2 border-gray-400 rounded-full">
-          <img src="/exchange.png" alt="" className="h-6 w-6 rotate-90 grayscale opacity-50" />
+          <img src="/exchange.png" alt="" className="h-6 w-6 rotate-90 opacity-80" />
         </button>
         </div>
         <CurrencySelector
