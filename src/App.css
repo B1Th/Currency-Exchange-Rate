@@ -16,7 +16,7 @@ body {
     }
   }
   
-  .swap:hover{
+  .swap{
     animation: wheel .6s ease-in;
   }
   @keyframes wheel{

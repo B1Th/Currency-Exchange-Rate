@@ -5,6 +5,7 @@ import AmountInput from './components/AmountInput';
 import ExchangeRateDisplay from './components/ExchangeRateDisplay';
 
 const ExchangeRate = () => {
+  const [isActive, setIsActive]= useState(false);
   const [rates, setRates] = useState({});
   const [baseCurrency, setBaseCurrency] = useState('AUD');
   const [targetCurrency, setTargetCurrency] = useState('NPR');
@@ -78,6 +79,7 @@ const ExchangeRate = () => {
     const newTargetCurrency = baseCurrency;
     setBaseCurrency(newBaseCurrency);
     setTargetCurrency(newTargetCurrency);
+    setIsActive(!isActive);
   };
 
   return (
@@ -98,7 +100,7 @@ const ExchangeRate = () => {
         />
         <div className="w-full flex justify-center">
         <button onClick={swapCurrencies} className="p-2 border-2 border-gray-400 rounded-full">
-          <img src="/exchange.png" alt="" className="swap h-6 w-6 rotate-90 opacity-80"  />
+          <img src="/exchange.png" alt="" className={`h-6 w-6 rotate-90 opacity-80 ${isActive ? 'swap' : ''}`}    />
         </button>
         </div>
         <CurrencySelector

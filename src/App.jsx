@@ -6,15 +6,11 @@ import Footer from "./components/Footer"
 export default function App() {
   return (
     <>
-      <div className='gradient-to-r'>
-        <main className="relative h-screen" id='home'>
-          <Landing />
-        </main>
-        <div id='exRate' className="relative overflow-hidden h-screen flex justify-center items-center flex-col">
+        <Landing />
+        <div id='exRate' className="h-screen overflow-hidden">
           <ExchangeRate />
         </div>
         <Footer />
-      </div>
     </>
   );
 }
